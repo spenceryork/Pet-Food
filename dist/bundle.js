@@ -30,7 +30,7 @@ let loadDogFood = function() {
                     
                     //While iterating through the types objects I also want to iterate through the Volumes arrays within each Type object to grab the name and price.
                     for (let k = 0; k < foodData.dog_brands.length; k++) {
-                        let brandVolume = `Type: ${brandType} Size: ${dogBrands[i].types[j].volumes[k].name}, Price: $${dogBrands[i].types[j].volumes[k].price} : `;
+                        let brandVolume = `Type: ${brandType}, Size: ${dogBrands[i].types[j].volumes[k].name}, Price: $${dogBrands[i].types[j].volumes[k].price} : `;
                         console.log("brandVolumes", brandVolume);
                         dogRow.appendChild(typeInfo);
                         typeInfo.innerHTML += brandVolume;
@@ -76,7 +76,7 @@ let loadCatFood = function() {
                     
                     //While iterating through the types objects I also want to iterate through the Volumes arrays within each Type object to grab the name and price.
                     for (let k = 0; k < foodData.cat_brands.length; k++) {
-                        let brandVolume = `Type: ${brandType} Size: ${catBrands[i].types[j].volumes[k].name}, Price: $${catBrands[i].types[j].volumes[k].price} : `;
+                        let brandVolume = `Type: ${brandType}, Size: ${catBrands[i].types[j].volumes[k].name}, Price: $${catBrands[i].types[j].volumes[k].price} : `;
                         console.log("brandVolumes", brandVolume);
                         catRow.appendChild(typeInfo);
                         typeInfo.innerHTML += brandVolume;
